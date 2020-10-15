@@ -1,0 +1,56 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.episodes-component-wrapper {
+    background-color: $episodes;
+    max-width: 100% !important;
+    margin-bottom: 30px;
+    min-height: 252px;
+    max-height: 252px;
+    border-radius: 2px;
+    display: flex;
+    @include breakpoint('mobile') {
+        max-width: 750px !important;
+        margin: 0 auto 30px auto;
+    }
+    @include breakpoint('desktop') {
+        width: 50%;
+        min-height: 156px;
+        max-height: 156px;
+        max-width: 556px !important;
+        margin: 0 0 30px 0;
+    }
+}
+
+.episodes-text-content {
+    padding: 32px 0 32px 40px;
+}
+
+.episodes-title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.episodes-text {
+    font-family: 'HK Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+}
+
+.episodes-button {
+    min-width: 130px;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-play {
+    width: 100%;
+    max-width: 54px;
+}

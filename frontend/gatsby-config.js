@@ -57,7 +57,8 @@ module.exports = {
         contentTypes: [
           // Insert list of resources
           'Sliders',
-          'Series'
+          'Series',
+          'Episodes'
         ],
         queryLimit: 1000,
       },
