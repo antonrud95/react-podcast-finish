@@ -1,20 +1,18 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins';
 
-.hero-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .container-outer {
   position: relative;
   padding: 0;
   height: 100%;
-  min-height: 680px;
+  min-height: 650px;
   overflow-x: hidden;
   @include breakpoint('mobile') {
     overflow-x: visible;
+    min-height: 350px;
+  }
+  @include breakpoint('desktop') {
+    min-height: 650px;
   }
 }
 .container-inner {
@@ -24,17 +22,18 @@
 .pic {
   width: 375px;
   position: absolute !important;
-  top: 271px;
-  right: -51px;
+  top: 270px !important;
+  right: -50px;
   overflow: hidden;
   @include breakpoint('small-mobile') {
     top: 200px;
   }
   @include breakpoint('mobile') {
-    top: 0;
+    top: -150px !important;
     right: 0;
   }
   @include breakpoint('tablet') {
+    top: -270px !important;
     width: 600px;
   }
   @include breakpoint('desktop') {
@@ -50,6 +49,7 @@
   z-index: -1;
   width: 100% !important;
   min-height: 1300px !important;
+  max-height: 1300px !important;
 }
 
 .hero-title {

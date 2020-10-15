@@ -37,7 +37,7 @@ const HeroSection: FC<Props> = ({ sliders }) => {
   return (
     <Container fluid className={styles.containerOuter}>
       <Container className={styles.containerInner}>
-        <div className={styles.heroBlock}>
+        <div>
           <Img
             fluid={data.earthPic.childImageSharp.fluid}
             className={styles.pic}
@@ -59,10 +59,10 @@ const HeroSection: FC<Props> = ({ sliders }) => {
           </SimpleSlider>
         </div>
       </Container>
-      <Img
+      {/* <Img
         fluid={data.topPic.childImageSharp.fluid}
         className={styles.background}
-      />
+      /> */}
     </Container>
   )
 }

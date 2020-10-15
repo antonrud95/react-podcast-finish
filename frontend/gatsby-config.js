@@ -56,7 +56,8 @@ module.exports = {
         apiURL: GATSBY_CMS_URL,
         contentTypes: [
           // Insert list of resources
-          'Sliders'
+          'Sliders',
+          'Series'
         ],
         queryLimit: 1000,
       },

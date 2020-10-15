@@ -1,0 +1,67 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.item-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    @include breakpoint ('small-mobile') {
+        width: 45%;
+    }
+    @include breakpoint ('desktop') {
+        min-width: 263px;
+        min-height: 252px;
+        max-width: 263px;
+        margin: 0 15px 30px 15px;
+    }
+}
+
+.text-wrapper {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 32px 19px 0 29px;
+}
+
+.series-image {
+    max-height: 252px;
+    border-radius: 4px !important;
+    margin: 0 auto;
+    @include breakpoint ('desktop') {
+        max-width: 263px;
+    }
+}
+
+.text-wrapper-title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.text-wrapper-text {
+    font-family: 'HK Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    margin-bottom: 0;
+}
+
+.button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0 0 32px 29px;
+}
+
+.button-wrapper span {
+    margin-left: 8px;
+}
+
+.series-button {
+    padding: 10px 16px !important;
+}
