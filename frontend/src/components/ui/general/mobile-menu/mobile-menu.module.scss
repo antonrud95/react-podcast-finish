@@ -1,0 +1,59 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  padding: 22px 0;
+  background-color: $mobile-bg;
+  overflow: scroll;
+  &__shown {
+    display: block;
+  }
+  @include breakpoint('mobile') {
+    padding: 48px 0;
+  }
+  @include breakpoint('tablet') {
+    padding: 73px 0;
+  }
+}
+
+.mobile-menu-container {
+  padding: 0 25px !important;
+}
+
+.link-block {
+  display: block !important;
+  padding-left: 29px !important;
+}
+.link {
+  margin-bottom: 39px;
+  &:last-child {
+    margin-bottom: 53px;
+  }
+  &:first-child {
+    margin-top: 69px;
+  }
+}
+
+.button-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.button-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.button-root {
+  background-color: #464073 !important;
+}
+.semicircles {
+  margin-top: 90px;
+}

@@ -1,0 +1,84 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.upper-title-block {
+    display: flex;
+    flex-direction: column-reverse;
+    @include breakpoint('mobile') {
+        flex-direction: row;
+    }
+}
+.span-title {
+    display: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $white;
+    margin: 0 8px;
+    @include breakpoint('mobile') {
+        display: flex;
+        margin-top: 6px;
+    }
+}
+.upper-title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    color: $white;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    @include breakpoint('mobile') {
+        margin-bottom: 26px;
+    }
+}
+.title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    color: $white;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    @include breakpoint('extra-small-mobile') {
+        width: 65%;
+    }
+    @include breakpoint('mobile') {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 0;
+        width: 100%;
+    }
+}
+.description {
+    font-family: 'HK Grotesk Extra Regular', sans-serif;
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 23px;
+    @include breakpoint('extra-small-mobile') {
+        width: 90%;
+    }
+    @include breakpoint('mobile') {
+        margin-bottom: 30px;
+        width: 85%;
+    }
+    @include breakpoint('tablet') {
+        width: 100%;
+    }
+}
+
+.hero-btn {
+    max-width: 134px;
+}
+
+.item-wrapper {
+    min-height: 354px;
+    padding-left: 15px;
+    @include breakpoint('small-mobile') {
+        min-height: 320px;
+    }
+    @include breakpoint('mobile') {
+        min-height: 280px;
+    }
+}

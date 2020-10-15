@@ -1,0 +1,57 @@
+@import 'src/styles/variables';
+.button {
+  font-family: 'HK Grotesk Medium', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  border: none;
+  border-radius: 39px;
+  transition: all 0.1s ease-in-out;
+  padding-left: $p-xl;
+  padding-right: $p-xl;
+  white-space: nowrap;
+  cursor: pointer;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.primary {
+  background-color: #353057;
+  &:hover,
+  &:focus {
+    background-color: #353057;
+  }
+  &:active {
+    background-color: #353057 !important;
+  }
+}
+.section {
+  background-color: transparent;
+  border: 2px solid $white;
+  width: 100%;
+  &:hover {
+    background-color: $white;
+    color: #003861;
+  }
+}
+.secondary {
+  color: $primary;
+  background-color: transparent;
+  border: 2px solid $primary;
+  &:hover,
+  &:focus {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid $primary;
+  }
+  &:active {
+    color: $primary !important;
+    background-color: transparent !important;
+    border: 2px solid $primary !important;
+  }
+}

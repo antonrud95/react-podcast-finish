@@ -1,0 +1,38 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+.navbar {
+  background-color: transparent;
+  padding: 25px 0;
+  @include breakpoint('mobile') {
+    padding: 48px 0;
+  }
+  @include breakpoint('tablet') {
+    padding: 73px 0;
+  }
+}
+.nav {
+  display: none;
+  @include breakpoint('tablet') {
+    display: flex;
+    width: 100%;
+    max-width: 680px;
+    justify-content: space-between;
+  }
+}
+.nav-link {
+  height: 34px;
+  display: flex;
+  align-items: center !important;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-bottom: 2px solid $white;
+  }
+}
+.open-icon {
+  display: block;
+  @include breakpoint('tablet') {
+    display: none;
+  }
+}

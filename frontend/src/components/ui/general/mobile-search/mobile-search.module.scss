@@ -1,0 +1,20 @@
+@import '~/styles/variables';
+
+.mobile-search-icon {
+  width: 26px;
+  height: 26px;
+}
+.mobile-search-input-block {
+  height: 40px;
+  border-bottom: 2px solid $white;
+  margin-bottom: 24px;
+}
+
+.mobile-search-input {
+  outline: none;
+  text-decoration: none !important;
+  background: none;
+  border: none;
+  color: $white;
+  line-height: 26px;
+}
