@@ -6,6 +6,7 @@ import SEO from '~/components/seo.component'
 import HeroSection from '~/components/sections/hero-section/hero-section.component'
 import SeriesSection from '~/components/sections/series-section/series-section.component'
 import EpisodesSection from '~/components/sections/episodes-section/episodes-section.component'
+import VideosSection from '~/components/sections/videos-section/videos-section.component'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => (
     <HeroSection sliders={data.allStrapiSliders.nodes}/>
     <SeriesSection series={data.allStrapiSeries.nodes}/>
     <EpisodesSection episodes={data.allStrapiEpisodes.nodes}/>
+    <VideosSection videos={data.allStrapiVideos.nodes}/>
   </Layout>
 )
 
@@ -46,6 +48,20 @@ export const query = graphql`
         id
         title
         text
+      }
+    }
+    allStrapiVideos {
+      nodes {
+        id
+        title
+        description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 263 quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

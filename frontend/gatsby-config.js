@@ -58,7 +58,8 @@ module.exports = {
           // Insert list of resources
           'Sliders',
           'Series',
-          'Episodes'
+          'Episodes',
+          'Videos'
         ],
         queryLimit: 1000,
       },
