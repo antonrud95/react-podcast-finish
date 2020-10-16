@@ -29,11 +29,10 @@
     top: 200px;
   }
   @include breakpoint('mobile') {
-    top: -150px !important;
+    top: 0 !important;
     right: 0;
   }
   @include breakpoint('tablet') {
-    top: -270px !important;
     width: 600px;
   }
   @include breakpoint('desktop') {
@@ -57,14 +56,14 @@
 }
 
 .container-slider {
-  margin-top: 97px;
+  padding-top: 97px;
   position: relative;
   min-height: 285px;
   @include breakpoint('mobile') {
-    margin-top: 250px;
+    padding-top: 250px;
   }
   @include breakpoint('tablet') {
-    margin-top: 331px;
+    padding-top: 331px;
   }
 }
 

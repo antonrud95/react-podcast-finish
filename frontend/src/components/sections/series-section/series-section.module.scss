@@ -29,4 +29,7 @@
         line-height: 30px;
         margin-bottom: 46px;
     }
+    @include breakpoint ('desktop') {
+        margin-top: 300px;
+    }
 }
