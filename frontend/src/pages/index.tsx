@@ -8,6 +8,7 @@ import SeriesSection from '~/components/sections/series-section/series-section.c
 import EpisodesSection from '~/components/sections/episodes-section/episodes-section.component'
 import VideosSection from '~/components/sections/videos-section/videos-section.component'
 import ContactsSection from '~/components/sections/contacts-section/contacts-section.component'
+import Footer from '~/components/sections/footer/footer.component'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => (
     <EpisodesSection episodes={data.allStrapiEpisodes.nodes}/>
     <VideosSection videos={data.allStrapiVideos.nodes}/>
     <ContactsSection contacts={data.allStrapiContacts.nodes}/>
+    <Footer />
   </Layout>
 )
 
