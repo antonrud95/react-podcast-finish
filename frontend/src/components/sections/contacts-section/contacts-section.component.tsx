@@ -2,10 +2,9 @@ import React from 'react'
 import styles from './contacts-section.module.scss'
 
 import FC from '~/types/fc'
-// import SButton from '../../ui/general/button/button.component'
+import SButton from '../../ui/general/button/button.component'
 import InfoItem from '~/components/ui/general/info-item/info-item.component'
 import { ContactsType } from '~/types/contacts.type'
-import Social from '~/components/ui/general/social-media/social-nedia.component'
 
 interface Props {
     contacts: ContactsType[]
@@ -32,16 +31,13 @@ const ContactsSection: FC<Props> = ({contacts}) => {
                             imageStyles={styles.contactsImage}
                             infoTitleStyles={styles.contactsTitle}
                             infoTextStyles={styles.contactsText}
+                            isSocial
+                            socialWrapper={styles.contactsSocialWrapper}
+                            icon={styles.contactsIcon}
                         />
                     )
                 })}
-                <Social 
-                    socialWrapper={styles.contactSocialWrapper}
-                    facebook={styles.contactFacebook}
-                    instagram={styles.contactInstagram}
-                    twitter={styles.contactTwitter}
-                    youtube={styles.contactYoutube}
-                />
+                <SButton variant="section" className={styles.contactsButton}>Read full history</SButton>
             </div>
         </React.Fragment>
     )

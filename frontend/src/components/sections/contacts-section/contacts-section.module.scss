@@ -81,3 +81,31 @@
         margin: 0 auto 45px auto;
     }
 }
+
+.contacts-social-wrapper {
+    max-width: 156px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    @include breakpoint('mobile') {
+        max-width: 80px;    
+    }
+}
+
+.contacts-icon {
+    width: 24px;
+    height: 24px;
+    @include breakpoint('mobile') {
+        width: 16px;
+        height: 16px;  
+    }
+}
+
+.contacts-button {
+    max-width: 180px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 112px;
+}

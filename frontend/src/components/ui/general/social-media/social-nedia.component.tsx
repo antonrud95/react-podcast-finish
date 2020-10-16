@@ -9,19 +9,16 @@ import FC from '~/types/fc'
 
 interface Props {
     socialWrapper: string
-    facebook: string
-    instagram: string
-    twitter: string
-    youtube: string
+    icon: string
 }
 
-const Social: FC<Props> = ({socialWrapper, facebook, instagram, twitter, youtube}) => {
+const Social: FC<Props> = ({socialWrapper, icon}) => {
     return (
         <div className={socialWrapper}>
-            <FacebookIcon className={facebook}/>
-            <InstagramIcon className={instagram}/>
-            <TwitterIcon className={twitter}/>
-            <YoutebeIcon className={youtube}/>
+            <FacebookIcon className={icon}/>
+            <InstagramIcon className={icon}/>
+            <TwitterIcon className={icon}/>
+            <YoutebeIcon className={icon}/>
         </div>
     )
 }
