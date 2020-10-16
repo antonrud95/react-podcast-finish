@@ -1,0 +1,83 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.contacts-container {
+    max-width: 975px !important;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint('mobile') {
+        padding: 0;
+    }
+}
+
+.contacts-item-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    @include breakpoint('mobile') {
+        width: 33.33333%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.contacts-title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    text-align: center;
+}
+.contacts-text {
+    font-family: 'HK Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contacts-image-wrapper {
+    max-width: 154px;
+    margin: 0 auto 21px auto;
+    @include breakpoint('mobile') {
+        max-width: 120px;
+    }
+}
+.contacts-image {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.contacts-main-title {
+    font-family: 'HK Grotesk Extra Bold', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: $white;
+    text-transform: uppercase;
+    margin: 80px 0 24px 0;
+    text-align: center;
+    @include breakpoint('tablet') {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 112px 0 46px 0;
+    }
+}
+.contacts-main-description {
+    font-family: 'HK Grotesk Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 41px;
+    padding: 0 22px;
+    @include breakpoint('tablet') {
+        width: 60%;
+        padding: 0;
+        margin: 0 auto 45px auto;
+    }
+}

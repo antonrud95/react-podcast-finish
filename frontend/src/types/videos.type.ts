@@ -6,7 +6,7 @@ export interface VideosType {
         childImageSharp: any
       } 
 }
-export interface Episodes {
+export interface Videos {
     allStrapiVideos: {
         nodes: VideosType[]
     }

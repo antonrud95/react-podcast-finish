@@ -59,7 +59,8 @@ module.exports = {
           'Sliders',
           'Series',
           'Episodes',
-          'Videos'
+          'Videos',
+          'Contacts'
         ],
         queryLimit: 1000,
       },
