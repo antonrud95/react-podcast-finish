@@ -4,6 +4,7 @@ import styles from './episodes-section.module.scss'
 import { EpisodesType } from '~/types/episodes.type'
 import EpisodesItem from '../../ui/general/episodes-item/episodes-item.component'
 import FC from '~/types/fc'
+import SButton from '../../ui/general/button/button.component'
 
 interface Props {
     episodes: EpisodesType[]
@@ -23,6 +24,9 @@ const EpisodesSection: FC<Props> = ({episodes}) => {
                         />
                     )
                 })}
+            </div>
+            <div className={styles.episodesBtn}>
+                <SButton variant="section">View all episodes</SButton>
             </div>
         </React.Fragment>
     )
