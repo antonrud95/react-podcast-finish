@@ -7,6 +7,8 @@ import SeriesItem from '../../ui/general/series-item/series-item.component'
 
 import { useWindowDimensions } from '~/hooks/useWindowDimensions';
 
+import SButton from '~/components/ui/general/button/button.component'
+
 interface Props {
     series: SeriesType[]
   }
@@ -46,6 +48,7 @@ const SeriesSection: FC<Props> = ({ series }) => {
                 })
                 }
             </div>
+            {width <= 767 && <SButton variant="section" className={styles.seriesMobileButton}>View all series</SButton>}
         </React.Fragment>
     )
 }
