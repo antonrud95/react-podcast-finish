@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Unikorns",
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "@types/react-slick": "^0.23.4",
     "axios-hooks": "^2.1.0",
     "axios-retry": "^3.1.8",

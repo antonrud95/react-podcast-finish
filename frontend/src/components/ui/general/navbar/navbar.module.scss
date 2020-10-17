@@ -3,6 +3,9 @@
 .navbar {
   background-color: transparent;
   padding: 25px 0;
+  &__onLight {
+    background-color: $bg;
+  }
   @include breakpoint('mobile') {
     padding: 48px 0;
   }
