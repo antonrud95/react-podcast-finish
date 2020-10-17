@@ -6,11 +6,14 @@ import SButton from '../../ui/general/button/button.component'
 import InfoItem from '~/components/ui/general/info-item/info-item.component'
 import { ContactsType } from '~/types/contacts.type'
 
+import { useWindowDimensions } from '~/hooks/useWindowDimensions';
+
 interface Props {
     contacts: ContactsType[]
 }
 
 const ContactsSection: FC<Props> = ({contacts}) => {
+    const { width } = useWindowDimensions();
     return (
         <React.Fragment>
             <h2 className={styles.contactsMainTitle}>who we are</h2>
@@ -37,7 +40,7 @@ const ContactsSection: FC<Props> = ({contacts}) => {
                         />
                     )
                 })}
-                <SButton variant="section" className={styles.contactsButton}>Read full history</SButton>
+                {width > 767 && <SButton variant="section" className={styles.contactsButton}>Read full history</SButton>}
             </div>
         </React.Fragment>
     )
