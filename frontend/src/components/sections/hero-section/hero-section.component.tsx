@@ -59,10 +59,6 @@ const HeroSection: FC<Props> = ({ sliders }) => {
           </SimpleSlider>
         </div>
       </Container>
-      {/* <Img
-        fluid={data.topPic.childImageSharp.fluid}
-        className={styles.background}
-      /> */}
     </Container>
   )
 }
