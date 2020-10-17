@@ -9,9 +9,12 @@
     max-height: 252px;
     border-radius: 2px;
     display: flex;
+    flex-direction: column;
+    position: relative;
     @include breakpoint('mobile') {
         max-width: 750px !important;
         margin: 0 auto 30px auto;
+        flex-direction: row;
     }
     @include breakpoint('desktop') {
         width: 50%;
@@ -23,7 +26,10 @@
 }
 
 .episodes-text-content {
-    padding: 32px 0 32px 40px;
+    padding: 32px 0 0 22px;
+    @include breakpoint('mobile') {
+        padding: 32px 0 32px 40px;
+    }
 }
 
 .episodes-title {
@@ -40,17 +46,29 @@
     font-size: 16px;
     line-height: 20px;
     color: $white;
+    margin-bottom: 0;
 }
 
 .episodes-button {
-    min-width: 130px;
-    height: 100% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 118px;
+    position: absolute;
+    bottom: 25px;
+    left: 21px;
+    @include breakpoint('mobile') {
+        position: static !important;
+        height: 100% !important;
+        min-width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .button-play {
     width: 100%;
     max-width: 54px;
+}
+
+.span {
+    margin-right: 10px;
 }
